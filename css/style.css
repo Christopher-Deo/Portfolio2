@@ -1,9 +1,6 @@
-/**
-* Template Name: Freelance
-* Template URL: https://templatemag.com/freelance-bootstrap-template/
-* Author: TemplateMag.com
-* License: https://templatemag.com/license/
-*/
+#logo {
+  height: 3rem;
+}
 
 body {
   padding-top: 50px;
@@ -16,7 +13,12 @@ body {
   -webkit-overflow-scrolling: touch
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: Raleway;
   font-weight: 300;
   color: #333
@@ -41,13 +43,15 @@ a {
   transition: color .1s ease-in, background .1s ease-in
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   color: #c0392b;
   text-decoration: none;
   outline: 0
 }
 
-a:before, a:after {
+a:before,
+a:after {
   -webkit-transition: color .1s ease-in, background .1s ease-in;
   -moz-transition: color .1s ease-in, background .1s ease-in;
   -ms-transition: color .1s ease-in, background .1s ease-in;
@@ -74,7 +78,7 @@ hr {
 }
 
 #headerwrap {
-  background: url(../img/header-bg.jpg) no-repeat center top;
+  background: url(../images/DeoHeadshots-14.jpg) no-repeat center top;
   margin-top: -10px;
   padding-top: 120px;
   text-align: center;
@@ -260,7 +264,8 @@ hr {
   transition: transform .4s
 }
 
-.mask figure:hover img, .mask figure.cs-hover img {
+.mask figure:hover img,
+.mask figure.cs-hover img {
   -webkit-transform: translateY(-30px);
   -moz-transform: translateY(-30px);
   -ms-transform: translateY(-30px);
@@ -282,7 +287,8 @@ hr {
   transition: transform .4s, opacity .1s .3s
 }
 
-.mask figure:hover figcaption, .mask figure.cs-hover figcaption {
+.mask figure:hover figcaption,
+.mask figure.cs-hover figcaption {
   opacity: 1;
   -webkit-transform: translateY(0px);
   -moz-transform: translateY(0px);
@@ -373,7 +379,9 @@ hr {
   background-color: #16a085
 }
 
-*, :after, ::before {
+*,
+:after,
+::before {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
   box-sizing: border-box
@@ -387,7 +395,8 @@ hr {
   src: url(../lib/ecoicons/ecoicons.eot?#iefix) format("embedded-opentype"), url(../lib/ecoicons/ecoicons.woff) format("woff"), url(../lib/ecoicons/ecoicons.ttf) format("truetype"), url(../lib/ecoicons/ecoicons.svg#ecoicons) format("svg")
 }
 
-.gn-menu-main, .gn-menu-main ul {
+.gn-menu-main,
+.gn-menu-main ul {
   margin: 0;
   padding: 0;
   background: #1abc9c;
@@ -417,7 +426,9 @@ hr {
   cursor: pointer
 }
 
-.gn-menu-main a:hover, .gn-menu li.gn-search-item:hover, .gn-menu li.gn-search-item:hover a {
+.gn-menu-main a:hover,
+.gn-menu li.gn-search-item:hover,
+.gn-menu li.gn-search-item:hover a {
   background: #16a085;
   color: #fff
 }
@@ -490,7 +501,8 @@ hr {
   font-size: 18px
 }
 
-.gn-menu li:not(:first-child), .gn-menu li li {
+.gn-menu li:not(:first-child),
+.gn-menu li li {
   box-shadow: inset 0 1px #16a085
 }
 
@@ -535,7 +547,8 @@ input.gn-search {
   color: #fff
 }
 
-.gn-search:focus::-webkit-input-placeholder, .gn-menu li.gn-search-item:hover .gn-search:focus::-webkit-input-placeholder {
+.gn-search:focus::-webkit-input-placeholder,
+.gn-menu li.gn-search-item:hover .gn-search:focus::-webkit-input-placeholder {
   color: transparent
 }
 
@@ -701,7 +714,8 @@ input.gn-search:focus {
   content: ''
 }
 
-.gn-icon-menu:hover::before, .gn-icon-menu.gn-selected:hover::before {
+.gn-icon-menu:hover::before,
+.gn-icon-menu.gn-selected:hover::before {
   background: #fff;
   box-shadow: 0 3px #16a085, 0 -6px white, 0 -9px #16a085, 0 -12px #fff
 }
@@ -711,7 +725,8 @@ input.gn-search:focus {
   box-shadow: 0 3px #1abc9c, 0 -6px white, 0 -9px #1abc9c, 0 -12px #fff
 }
 
-.gn-menu-wrapper.gn-open-all, .gn-menu-wrapper.gn-open-part {
+.gn-menu-wrapper.gn-open-all,
+.gn-menu-wrapper.gn-open-part {
   -webkit-transform: translateX(0px);
   -moz-transform: translateX(0px);
   transform: translateX(0px)
@@ -732,6 +747,7 @@ input.gn-search:focus {
     transform: translateX(0px);
     width: 100%
   }
+
   .gn-menu-wrapper.gn-open-all .gn-scroller {
     width: 130%
   }
@@ -739,15 +755,14 @@ input.gn-search:focus {
 
 /* Contact Form */
 
-.contact-form {
-
-}
+.contact-form {}
 
 .contact-form label {
-   color: #999;
+  color: #999;
 }
 
-.contact-form input, .contact-form textarea {
+.contact-form input,
+.contact-form textarea {
   padding: 10px 12px;
   border-radius: 0;
   box-shadow: none;
@@ -759,7 +774,7 @@ input.gn-search:focus {
   text-align: center;
 }
 
-.contact-form .form-send button  {
+.contact-form .form-send button {
   background: #1abc9c;
   border: 0;
   padding: 10px 30px;
