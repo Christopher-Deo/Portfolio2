@@ -1,7 +1,3 @@
-#logo {
-  height: 6rem;
-}
-
 body {
   padding-top: 50px;
   background-color: #f2f2f2;
@@ -13,6 +9,10 @@ body {
   -webkit-overflow-scrolling: touch
 }
 
+#logo {
+  height: 6rem;
+}
+
 h1,
 h2,
 h3,
@@ -22,6 +22,14 @@ h6 {
   font-family: Raleway;
   font-weight: 300;
   color: #333
+}
+
+h1 span {
+  color: #19BC9C;
+  text-emphasis: bold;
+  text-shadow: #000 2px 2px 2px;
+  /* text-decoration: underline; */
+  font-weight: 500;
 }
 
 p {
@@ -79,8 +87,9 @@ hr {
 
 #headerwrap {
   background: url(../images/DeoHeadshots-14.jpg) no-repeat center top;
-  margin-top: -10px;
+  margin-top: 10px;
   padding-top: 120px;
+  padding-bottom: 25px;
   text-align: center;
   background-attachment: relative;
   background-position: center center;
@@ -102,9 +111,290 @@ hr {
   color: #fff
 }
 
+/* ====================== start of resume section ================== */
+#resume h3 {
+  font-size: 35px;
+  color: #fff;
+  text-align: center;
+}
+
+#resume {
+  margin-top: 10px;
+  background-image: url(../images/slide-02.jpg);
+  background-size: cover;
+  position: relative;
+  /* overflow: hidden; */
+}
+
+@media screen and (max-width: 575.98px) {
+  #resume {
+    height: auto;
+  }
+}
+
+#resume::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#resume .my-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  margin: 1.25rem 0;
+  padding: .9375rem;
+  transition: ease .5s;
+}
+
+#resume .my-wrapper {
+  display: flex;
+  flex-wrap: wrap;
+  flex: 1 1 100%;
+  max-width: 100%;
+  width: 100%;
+  position: relative;
+  margin: 1.25rem 0;
+  padding: .9375rem;
+  transition: ease .5s;
+}
+
+#resume .my-wrapper .inter {
+  position: absolute;
+  left: -15%;
+  top: 14%;
+  z-index: 2;
+  transform: rotate(-90deg);
+}
+
+@media screen and (max-width: 575.98px) {
+  #resume .my-wrapper .inter {
+    display: none;
+  }
+}
+
+#resume .my-wrapper .inter h6 {
+  color: #fff;
+  font-size: 1rem;
+  font-weight: 400;
+  letter-spacing: .5px;
+  text-transform: uppercase;
+}
+
+#resume .my-wrapper .left-wrapper,
+#resume .my-wrapper .right-wrapper {
+  display: flex;
+  flex-direction: column;
+  flex-flow: column nowrap;
+  flex: 1 1 50%;
+  width: calc(50%);
+  max-width: calc(50%);
+  padding: .9375rem;
+  position: relative;
+}
+
+@media screen and (max-width: 767.98px) {
+
+  #resume .my-wrapper .left-wrapper,
+  #resume .my-wrapper .right-wrapper {
+    flex: 1 1 100%;
+    width: calc(100%);
+    max-width: calc(100%);
+  }
+}
+
+#resume .my-wrapper .left-wrapper .content,
+#resume .my-wrapper .right-wrapper .content {
+  display: block;
+  position: relative;
+  padding: .9375rem;
+  margin: 1.25rem 0;
+  transition: all ease .3s;
+}
+
+@media screen and (max-width: 575.98px) {
+
+  #resume .my-wrapper .left-wrapper .content,
+  #resume .my-wrapper .right-wrapper .content {
+    padding: 0;
+    margin: .625rem 0;
+  }
+}
+
+#resume .my-wrapper .left-wrapper .content .head,
+#resume .my-wrapper .right-wrapper .content .head {
+  position: relative;
+  text-align: center;
+  display: inline-block;
+  width: 100%;
+  background: rgba(227, 28, 37, 0.7);
+  padding: .9375rem;
+}
+
+@media screen and (max-width: 575.98px) {
+
+  #resume .my-wrapper .left-wrapper .content .head,
+  #resume .my-wrapper .right-wrapper .content .head {
+    padding: .625rem;
+  }
+}
+
+#resume .my-wrapper .left-wrapper .content .head h2,
+#resume .my-wrapper .right-wrapper .content .head h2 {
+  font-size: 1.25rem;
+  color: #fff;
+  text-transform: capitalize;
+  display: block;
+}
+
+@media screen and (max-width: 575.98px) {
+
+  #resume .my-wrapper .left-wrapper .content .head h2,
+  #resume .my-wrapper .right-wrapper .content .head h2 {
+    font-size: 1rem;
+  }
+}
+
+#resume .my-wrapper .left-wrapper .content .list-inner,
+#resume .my-wrapper .right-wrapper .content .list-inner {
+  display: block;
+  padding: 1.25rem 1.875rem;
+  background: rgba(0, 0, 0, 0.5);
+  position: relative;
+  height: 100%;
+}
+
+@media screen and (max-width: 575.98px) {
+
+  #resume .my-wrapper .left-wrapper .content .list-inner,
+  #resume .my-wrapper .right-wrapper .content .list-inner {
+    padding: .625rem 1.25rem;
+  }
+}
+
+#resume .my-wrapper .left-wrapper .content .list-inner ol li,
+#resume .my-wrapper .right-wrapper .content .list-inner ol li {
+  display: block;
+  padding: 1.125rem 0 1.125rem 1.25rem;
+  position: relative;
+  transition: all ease-in-out .5s;
+}
+
+#resume .my-wrapper .left-wrapper .content .list-inner ol li:nth-child(2),
+#resume .my-wrapper .right-wrapper .content .list-inner ol li:nth-child(2) {
+  padding-bottom: .3125rem;
+}
+
+#resume .my-wrapper .left-wrapper .content .list-inner ol li:nth-child(2)::before,
+#resume .my-wrapper .right-wrapper .content .list-inner ol li:nth-child(2)::before {
+  top: 0;
+}
+
+#resume .my-wrapper .left-wrapper .content .list-inner ol li::after,
+#resume .my-wrapper .right-wrapper .content .list-inner ol li::after {
+  position: absolute;
+  content: "";
+  width: .9375rem;
+  height: .9375rem;
+  background: #E31C25;
+  border-radius: 50%;
+  left: -7.5px;
+  top: 1.375rem;
+  border: .125rem solid #ddd;
+}
+
+#resume .my-wrapper .left-wrapper .content .list-inner ol li::before,
+#resume .my-wrapper .right-wrapper .content .list-inner ol li::before {
+  position: absolute;
+  content: "";
+  left: 0;
+  top: 1.375rem;
+  height: 100%;
+  width: .0625rem;
+  background: #ddd;
+}
+
+#resume .my-wrapper .left-wrapper .content .list-inner ol li h4,
+#resume .my-wrapper .right-wrapper .content .list-inner ol li h4 {
+  display: block;
+  margin-bottom: .625rem;
+  color: #fff;
+  font-size: 2.125rem;
+  text-transform: capitalize;
+}
+
+@media screen and (max-width: 575.98px) {
+
+  #resume .my-wrapper .left-wrapper .content .list-inner ol li h4,
+  #resume .my-wrapper .right-wrapper .content .list-inner ol li h4 {
+    font-size: 1rem;
+  }
+}
+
+#resume .my-wrapper .left-wrapper .content .list-inner ol li h6,
+#resume .my-wrapper .right-wrapper .content .list-inner ol li h6 {
+  font-size: 1em;
+  display: inline-block;
+  margin: .625rem 0;
+  color: #9e9e9e;
+}
+
+@media screen and (max-width: 575.98px) {
+
+  #resume .my-wrapper .left-wrapper .content .list-inner ol li h6,
+  #resume .my-wrapper .right-wrapper .content .list-inner ol li h6 {
+    font-size: .9375rem;
+  }
+}
+
+#resume .my-wrapper .left-wrapper .content .list-inner ol li span,
+#resume .my-wrapper .right-wrapper .content .list-inner ol li span {
+  display: block;
+  color: #E31C25;
+  font-size: 1rem;
+  margin: .3125rem 0;
+}
+
+@media screen and (max-width: 575.98px) {
+
+  #resume .my-wrapper .left-wrapper .content .list-inner ol li span,
+  #resume .my-wrapper .right-wrapper .content .list-inner ol li span {
+    font-size: .9375rem;
+  }
+}
+
+#resume .my-wrapper .left-wrapper .content .list-inner ol li p,
+#resume .my-wrapper .right-wrapper .content .list-inner ol li p {
+  font-size: 1rem;
+  text-align: justify;
+  line-height: 1.5625rem;
+  color: #9e9e9e;
+  display: inline-block;
+  margin: .3125rem 0;
+}
+
+@media screen and (max-width: 575.98px) {
+
+  #resume .my-wrapper .left-wrapper .content .list-inner ol li p,
+  #resume .my-wrapper .right-wrapper .content .list-inner ol li p {
+    font-size: .9375rem;
+    line-height: 1.375rem;
+  }
+}
+
+
+
+/* ================== start of portfolio section ========================= */
 #foliowrap {
   background: url(../img/foliowrap.jpg) no-repeat center top;
-  margin-top: 30px;
+  /* margin-top: 30px; */
   padding-top: 50px;
   text-align: center;
   background-attachment: relative;
@@ -127,6 +417,7 @@ hr {
   text-align: center
 }
 
+/* =================== testimonials and referral section ==================== */
 #testimonial {
   background: url(../img/mint.jpg) no-repeat center top;
   margin-top: 80px;
@@ -156,7 +447,7 @@ hr {
   font-size: 20px;
   font-weight: 700
 }
-
+/* ===================== footer section ========================== */
 #footerwrap {
   background-color: #2f2f2f;
   color: #fff;
@@ -176,6 +467,7 @@ hr {
   font-size: 18px
 }
 
+/* ==================== about section ============================= */
 .about {
   padding-top: 40px;
   text-align: center
